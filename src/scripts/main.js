@@ -366,7 +366,7 @@ for (const i of people) {
 
   newRow.insertAdjacentHTML(
     'beforeend',
-    `<td>${i.sex.includes('m') ? 'male' : 'female'}</td>`,
+    `<td>${i.sex === 'm' ? 'male' : 'female'}</td>`,
   );
   newRow.insertAdjacentHTML('beforeend', `<td>${i.born}</td>`);
   newRow.insertAdjacentHTML('beforeend', `<td>${i.died}</td>`);
